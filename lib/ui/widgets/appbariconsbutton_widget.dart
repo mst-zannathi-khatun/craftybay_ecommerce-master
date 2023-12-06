@@ -11,10 +11,12 @@ class AppBarIconsButtonWidget extends StatelessWidget {
       radius: 17,
       backgroundColor: lightGreyColor.withOpacity(0.5),
       child: InkWell(
+        borderRadius: BorderRadius.circular(50),
+        splashColor: lightGreyColor.withOpacity(0.5),
         onTap: onTap,
         child: Icon(
           icons,
-          color: greyColor,
+          color: greyColor.withOpacity(0.5),
         ),
       ),
     );
