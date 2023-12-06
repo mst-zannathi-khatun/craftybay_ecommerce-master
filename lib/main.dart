@@ -1,3 +1,4 @@
+import 'package:craftybay_ecommerce/ui/screens/home_screen.dart';
 import 'package:craftybay_ecommerce/ui/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -10,9 +11,15 @@ class CraftyBay extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: HomeScreen(),
+      theme: ThemeData(
+        appBarTheme: const AppBarTheme(
+          color: Colors.white,
+          elevation: 0,
+        ),
+      ),
     );
   }
 }
