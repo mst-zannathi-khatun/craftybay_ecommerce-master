@@ -1,4 +1,4 @@
-import 'package:craftybay_ecommerce/ui/screens/home_screen.dart';
+import 'package:craftybay_ecommerce/ui/screens/bottom_navigationbar_screen.dart';
 import 'package:craftybay_ecommerce/ui/utils/getxBinding.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -15,7 +15,7 @@ class CraftyBay extends StatelessWidget {
     return GetMaterialApp(
       initialBinding: GetxBinding(),
       debugShowCheckedModeBanner: false,
-      home: const HomeScreen(),
+      home: const BottomNavigationBarScreen(),
       theme: ThemeData(
         appBarTheme: const AppBarTheme(
           color: Colors.white,

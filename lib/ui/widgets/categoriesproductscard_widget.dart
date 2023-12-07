@@ -9,33 +9,32 @@ class CategoriesProductsCardWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 3),
-      child: Column(
-        children: [
-          InkWell(
-            onTap: () {},
-            child: Container(
+    return InkWell(
+      onTap: (){},
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 6),
+        child: Column(
+          children: [
+            Container(
               height: 80,
               width: 80,
-              child: Icon(
-                Icons.computer_rounded,
-                size: 50,
-              ),
               decoration: BoxDecoration(
                 color: primaryColor.withOpacity(0.2),
                 borderRadius: BorderRadius.circular(8),
               ),
+              child: const Icon(
+                Icons.computer_rounded,
+                size: 50,
+              ),
             ),
-          ),
-          SizedBox(
-            height: 4,
-          ),
-          Text(
-            "Computer",
-            style: head4TextStyle,
-          ),
-        ],
+           const SizedBox(height: 4,),
+            Text(
+              "Computer",
+              textAlign: TextAlign.center,
+              style: head4TextStyle,
+            ),
+          ],
+        ),
       ),
     );
   }
