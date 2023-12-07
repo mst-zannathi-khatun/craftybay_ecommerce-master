@@ -1,6 +1,7 @@
 import 'package:craftybay_ecommerce/ui/screens/home_screen.dart';
-import 'package:craftybay_ecommerce/ui/screens/splash_screen.dart';
+import 'package:craftybay_ecommerce/ui/utils/getxBinding.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 void main(){
   runApp(const CraftyBay());
@@ -11,9 +12,10 @@ class CraftyBay extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
+      initialBinding: GetxBinding(),
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: const HomeScreen(),
       theme: ThemeData(
         appBarTheme: const AppBarTheme(
           color: Colors.white,
@@ -23,3 +25,4 @@ class CraftyBay extends StatelessWidget {
     );
   }
 }
+
