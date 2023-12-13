@@ -12,10 +12,10 @@ class EmailVerificationScreen extends StatefulWidget {
   @override
   State<EmailVerificationScreen> createState() => _EmailVerificationScreenState();
 }
-final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
 class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
  final TextEditingController _emailETController = TextEditingController();
+ final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -39,6 +39,12 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                   TextFromFieldWidget(
                     controller: _emailETController,
                     hintText: 'Email Address',
+                    validator: (String? value) {
+                      if(value?.isEmpty?? true){
+                        return 'Enter a valid email';
+                      }
+                      return null;
+                    },
 
                   ),
                   const SizedBox(height: 8,),
@@ -47,9 +53,10 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
                     : ElevateButtonWidget(
                         text: "Next",
                         onPressed: () async{
+                          if(_formKey.currentState!.validate()){}
                           final bool response = await authController.emailVerification(_emailETController.text);
                           if(response){
-                            Get.to(const OTPVerificationScreen());
+                            Get.to(OTPVerificationScreen(email: _emailETController.text,));
                           } else{
                            if(mounted){
                              ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Email Verification Faile , Try Again"),),);
