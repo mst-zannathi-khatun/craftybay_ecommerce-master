@@ -1,3 +1,4 @@
+import 'package:craftybay_ecommerce/ui/screens/emailverification_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import '../widgets/appbariconsbutton_widget.dart';
@@ -8,7 +9,7 @@ import '../widgets/popularproductscard_widget.dart';
 import '../widgets/remarkstitle_widget.dart';
 import '../widgets/searchtextfield_widget.dart';
 import '../widgets/specialproductscard_widget.dart';
-
+import 'package:get/get.dart';
 
 
 class HomeScreen extends StatelessWidget {
@@ -25,7 +26,9 @@ class HomeScreen extends StatelessWidget {
 
             /// From Here AppBar Icons Design Started
             AppBarIconsButtonWidget(
-              onTap: () {},
+              onTap: () {
+                Get.to(const EmailVerificationScreen());
+              },
               icons: Icons.person_outline,
             ),
             const SizedBox(
