@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 void main(){
   runApp(const CraftyBay());
 }
-
+///thanks
 class CraftyBay extends StatelessWidget {
   const CraftyBay({super.key});
 
