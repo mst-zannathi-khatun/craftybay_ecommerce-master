@@ -63,7 +63,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
               ),
             ),
             const SizedBox(height: 8,),
-            const ElevateButtonWidget(text: "Next",),
+           // const ElevateButtonWidget(text: "Next",),
             const SizedBox(height: 16,),
             RichText(
               text: const TextSpan(

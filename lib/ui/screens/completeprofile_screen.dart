@@ -24,30 +24,30 @@ class _CompleteProfileScreenState extends State<CompleteProfileScreen> {
             const SizedBox(height: 15,),
             Text("Complete Profile", style: head1TextStyle,),
             Text("Get started with us with your details", style: head4TextStyle,),
-            const SizedBox(height: 16,),
-            const TextFromFieldWidget(
-              hintText: "First Name",
-            ),
-            const SizedBox(height: 8,),
-            const TextFromFieldWidget(
-              hintText: "Last Name",
-            ),
-            const SizedBox(height: 8,),
-            const TextFromFieldWidget(
-              hintText: "Mobile",
-            ),
-            const SizedBox(height: 8,),
-            const TextFromFieldWidget(
-              hintText: "City",
-            ),
-            const SizedBox(height: 8,),
-            const TextFromFieldWidget(
-              hintText: "Shipping Address",
-            ),
-            const SizedBox(height: 16,),
-            const ElevateButtonWidget(
-              text: "Complete",
-            ),
+            // const SizedBox(height: 16,),
+            // const TextFromFieldWidget(
+            //   hintText: "First Name",
+            // ),
+            // const SizedBox(height: 8,),
+            // const TextFromFieldWidget(
+            //   hintText: "Last Name",
+            // ),
+            // const SizedBox(height: 8,),
+            // const TextFromFieldWidget(
+            //   hintText: "Mobile",
+            // ),
+            // const SizedBox(height: 8,),
+            // const TextFromFieldWidget(
+            //   hintText: "City",
+            // ),
+            // const SizedBox(height: 8,),
+            // const TextFromFieldWidget(
+            //   hintText: "Shipping Address",
+            // ),
+            // const SizedBox(height: 16,),
+            // const ElevateButtonWidget(
+            //   text: "Complete",
+            // ),
           ],
         ),
       ),

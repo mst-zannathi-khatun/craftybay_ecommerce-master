@@ -21,19 +21,19 @@ class _CreateReviewScreenState extends State<CreateReviewScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            TextFromFieldWidget(
-              hintText: "First Name",
-            ),
-            SizedBox(height: 8,),
-            TextFromFieldWidget(
-              hintText: "Last Name",
-            ),
-            SizedBox(height: 8,),
-            TextFromFieldWidget(
-              hintText: "Write Review",
-            ),
-            SizedBox(height: 16,),
-            ElevateButtonWidget(text: 'Submit',),
+            // TextFromFieldWidget(
+            //   hintText: "First Name",
+            // ),
+            // SizedBox(height: 8,),
+            // TextFromFieldWidget(
+            //   hintText: "Last Name",
+            // ),
+            // SizedBox(height: 8,),
+            // TextFromFieldWidget(
+            //   hintText: "Write Review",
+            // ),
+            // SizedBox(height: 16,),
+            // ElevateButtonWidget(text: 'Submit',),
           ],
         ),
       ),

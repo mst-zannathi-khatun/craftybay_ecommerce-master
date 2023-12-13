@@ -9,6 +9,7 @@ class NetWorkCaller {
   static Future<ResponseModel> getRequest({required String url}) async {
     try {
       final response = await get(Uri.parse(Urls.baseUrl + url));
+      print(response.body);
       if (response.statusCode == 200) {
         return ResponseModel(
             statusCode: response.statusCode,

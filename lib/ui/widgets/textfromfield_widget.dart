@@ -4,14 +4,16 @@ import '../utils/app_colors.dart';
 
 class TextFromFieldWidget extends StatelessWidget {
   const TextFromFieldWidget({
-    Key? key, required this.hintText,
+    Key? key, required this.hintText, required this.controller,
   }) : super(key: key);
 
   final String hintText;
+  final TextEditingController controller;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+    controller: controller,
       decoration: InputDecoration(
         border: OutlineInputBorder(
           borderSide: BorderSide(color: primaryColor),
